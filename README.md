@@ -31,11 +31,14 @@ The goal of the project is to use sonar signal data to distinguish between two t
 ## Workflow
 
 1. **Input**: The user provides sonar signal features through a text area where they can enter values separated by commas.
+
 2. **Processing**:
    - The frontend collects these values, splits them into an array of numbers, and sends them as a JSON object to the backend API endpoint (`/predict`).
+
 3. **Prediction**:
    - The Flask backend receives the input features, processes them with the machine learning model, and generates a prediction.
    - The prediction result (either "rock" or "mine") is sent back to the frontend.
+   
 4. **Output**:
    - The frontend receives the prediction and displays the result to the user, enhancing the overall user experience.
 
